@@ -42,6 +42,23 @@ class Queue {
     return this;
   }
 
+  //another possible solution
+  // if(this.length > 0){
+  //   this.first = this.first.next
+  // this.length--;
+  // }
+
+  // if(this.length === 1){
+  //   this.last = null;
+  // }
+
+  isEmpty(){
+    if(this.first){
+      return false;
+    } else{
+      return true
+    }
+  }
 }
 
 const myQueue = new Queue();
